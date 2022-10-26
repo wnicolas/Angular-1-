@@ -20,6 +20,12 @@ export class PadreComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  cambiarTechCamper() {
+    this.persona.nombre = 'Mariana Pérez';
+    this.persona.edad = 32;
+    this.persona.profesion = 'Abogada';
+  }
+
   recibirCurso(curso: Curso) {
     alert(`Curso ${curso.codigo} - ${curso.nombre} recibido desde el padre`);
   }

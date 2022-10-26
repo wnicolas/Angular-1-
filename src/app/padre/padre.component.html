@@ -9,6 +9,7 @@
     </ul>
   </div>
   <div class="container p-3">
+    <button class="btn btn-outline-info m-3" (click)="cambiarTechCamper()">Cambiar TechCamper</button>
     <!-- Paso de variable como parámetro -->
     <app-hijo mensaje="mundo" [techCamper]="persona" (eventCurso)="recibirCurso($event)"></app-hijo>
   </div>
