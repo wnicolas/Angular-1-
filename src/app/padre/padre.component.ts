@@ -16,17 +16,24 @@ export class PadreComponent implements OnInit {
     edad: 21,
     profesion: 'Ingeniero Electrónico',
   };
+  cursos: Curso[] = [];
   constructor() {}
 
   ngOnInit(): void {}
 
   cambiarTechCamper() {
-    this.persona.nombre = 'Mariana Pérez';
+    this.persona.nombre = 'Sandra Pérez';
     this.persona.edad = 32;
     this.persona.profesion = 'Abogada';
   }
 
   recibirCurso(curso: Curso) {
     alert(`Curso ${curso.codigo} - ${curso.nombre} recibido desde el padre`);
+    let nuevoCurso: Curso = {
+      nombre: curso.nombre,
+      codigo: curso.codigo,
+      cantidad_horas: curso.cantidad_horas,
+    };
+    this.cursos.push(nuevoCurso);
   }
 }

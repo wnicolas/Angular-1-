@@ -1,6 +1,7 @@
-<div class="border" style="background-color: #ebfff0;">  <div class="container">
+<div class="border" style="background-color: #ebfff0">
+  <div class="container">
     <h4 class="text-center">Componente hijo</h4>
-    {{ mensaje }}
+    Mensaje pasado desde el padre: <b>{{ mensaje }}</b>
     <p>Datos de la persona desde el hijo:</p>
     <ul>
       <li>nombre: {{ techCamper.nombre }}</li>
@@ -29,10 +30,7 @@
         placeholder="Cantidad de horas"
       />
       <div class="card-footer">
-        <button
-          class="btn btn-outline-info"
-          (dblclick)="enviarCursoAPadre()"
-        >
+        <button class="btn btn-outline-info" (dblclick)="enviarCursoAPadre()">
           Enviar curso al padre
         </button>
       </div>

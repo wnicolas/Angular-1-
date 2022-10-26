@@ -12,9 +12,24 @@
     Cambiar TechCamper
   </button>
   <div class="container p-3">
+    <table class="table table-sm table-striped">
+      <thead>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Horas</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let curso of cursos">
+          <td>{{ curso.codigo }}</td>
+          <td>{{ curso.nombre }}</td>
+          <td>{{ curso.cantidad_horas }}</td>
+        </tr>
+      </tbody>
+    </table>
+
     <!-- Paso de variable como parámetro -->
     <app-hijo
-      mensaje="mundo"
+      mensaje="Mensaje pasado como string"
       [techCamper]="persona"
       (eventCurso)="recibirCurso($event)"
     ></app-hijo>
