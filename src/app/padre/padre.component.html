@@ -1,6 +1,15 @@
 <div class="border">
   <h2 class="text-center">Componente padre</h2>
+  <div class="container">
+    <p>Datos de la persona desde el padre:</p>
+    <ul>
+      <li>nombre: {{ persona.nombre }}</li>
+      <li>edad: {{ persona.edad }}</li>
+      <li>profesion: {{ persona.profesion }}</li>
+    </ul>
+  </div>
   <div class="container p-3">
-    <app-hijo></app-hijo>
+    <!-- Paso de variable como parámetro -->
+    <app-hijo mensaje="mundo" [techCamper]="persona"></app-hijo>
   </div>
 </div>

@@ -1,3 +1,12 @@
 <div class="border">
-  <h4 class="text-center">Componente hijo</h4>
+  <div class="container">
+    <h4 class="text-center">Componente hijo</h4>
+    {{ mensaje }}
+    <p>Datos de la persona desde el hijo:</p>
+    <ul>
+      <li>nombre: {{ techCamper.nombre }}</li>
+      <li>edad: {{ techCamper.edad }}</li>
+      <li>profesion: {{ techCamper.profesion }}</li>
+    </ul>
+  </div>
 </div>
