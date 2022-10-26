@@ -9,18 +9,39 @@
       <img src="{{ urlImagen }}" alt="" />
     </div>
   </div>
-</div>
-<!-- Fin Interpolación -->
+  <div class="card-footer">
+    <!-- Fin Interpolación -->
 
-<!-- Inicio Template Statements
+    <!-- Inicio Template Statements
       Son del tipo
-      (event)="statement"
--->
-<button
-  class="btn btn-outline-primary"
-  (click)="cambiarCliente('Angie Katherine Linares Contento')"
->
-  Actualizar nuevo cliente
-</button>
+      (event)="statement"-->
+    <button
+      class="btn btn-outline-primary"
+      (click)="cambiarCliente('Angie Katherine Linares Contento')"
+    >
+      Actualizar nuevo cliente
+    </button>
+    <!-- Fin Template Statements -->
+  </div>
+</div>
 
-<!-- Fin Template Statements -->
+<!-- Inicio Data Binding -->
+<div class="card my-5">
+  <div class="card-header">Data Binding</div>
+  <!-- Existen tres tipos de Data Binding
+      1. One-Way desde la fuente de datos a la vista {{expression}}, [target]='expression'
+      2. One-Way desde el objetivo de la vista a la fuente de datos (target)='statement'
+      3. Two-Way [(target)]='expression'
+-->
+  <div class="card-body">
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        value="Javier Leonardo Carrillo"
+        [disabled]="controlActivo"
+      />
+    </div>
+  </div>
+</div>
+<!-- Fin Data Binding -->

@@ -20,4 +20,9 @@ export class AppComponent {
   cambiarCliente(nuevoCliente: String) {
     this.clienteActual = nuevoCliente;
   }
+
+  /**
+   * Data Binding
+   */
+  controlActivo: boolean = false;
 }
