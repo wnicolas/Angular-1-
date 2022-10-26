@@ -6,11 +6,21 @@
     Cliente actual: <b>{{ clienteActual }}</b>
     <hr />
     <div class="d-flex justify-content-center">
-      <img
-        src="{{urlImagen}}"
-        alt=""
-      />
+      <img src="{{ urlImagen }}" alt="" />
     </div>
   </div>
 </div>
 <!-- Fin Interpolación -->
+
+<!-- Inicio Template Statements
+      Son del tipo
+      (event)="statement"
+-->
+<button
+  class="btn btn-outline-primary"
+  (click)="cambiarCliente('Angie Katherine Linares Contento')"
+>
+  Actualizar nuevo cliente
+</button>
+
+<!-- Fin Template Statements -->
