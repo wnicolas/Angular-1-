@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Curso } from '../Interfaces/curso.interface';
 /**
  * Importación de interfaz persona
  */
@@ -18,4 +19,8 @@ export class PadreComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  recibirCurso(curso: Curso) {
+    alert(`Curso ${curso.codigo} - ${curso.nombre} recibido desde el padre`);
+  }
 }

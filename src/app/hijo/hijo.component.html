@@ -8,5 +8,36 @@
       <li>edad: {{ techCamper.edad }}</li>
       <li>profesion: {{ techCamper.profesion }}</li>
     </ul>
+    <hr />
+    <p>Crea un nuevo curso</p>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="curso.codigo"
+        placeholder="Código de curso"
+      />
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="curso.nombre"
+        placeholder="Nombre de curso"
+      />
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="curso.cantidad_horas"
+        placeholder="Cantidad de horas"
+      />
+      <div class="card-footer">
+        <button
+          class="btn btn-outline-success"
+          (dblclick)="enviarCursoAPadre()"
+        >
+          Enviar curso al padre
+        </button>
+      </div>
+      {{ curso | json }}
+    </div>
   </div>
 </div>
