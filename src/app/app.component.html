@@ -1,4 +1,16 @@
-Bienvenido: {{nombre}}
-{{apellido}}
-
-<input type="text" [(ngModel)]="apellido">
+<!-- Inicio Interpolación -->
+<div class="card">
+  <div class="card-header">Interpolación</div>
+  <div class="card-body">
+    <!-- Se reemplazan los valores de las variables por lo que se tiene almacenado en el componente -->
+    Cliente actual: <b>{{ clienteActual }}</b>
+    <hr />
+    <div class="d-flex justify-content-center">
+      <img
+        src="{{urlImagen}}"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+<!-- Fin Interpolación -->
