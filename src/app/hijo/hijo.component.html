@@ -1,5 +1,4 @@
-<div class="border">
-  <div class="container">
+<div class="border" style="background-color: #ebfff0;">  <div class="container">
     <h4 class="text-center">Componente hijo</h4>
     {{ mensaje }}
     <p>Datos de la persona desde el hijo:</p>
@@ -31,13 +30,12 @@
       />
       <div class="card-footer">
         <button
-          class="btn btn-outline-success"
+          class="btn btn-outline-info"
           (dblclick)="enviarCursoAPadre()"
         >
           Enviar curso al padre
         </button>
       </div>
-      {{ curso | json }}
     </div>
   </div>
 </div>
