@@ -28,6 +28,7 @@ export class HijoComponent implements OnInit {
    * Se declaran los @Output que se pasarán de hijo a padre
    */
   @Output() eventCurso: EventEmitter<Curso> = new EventEmitter<Curso>();
+
   curso: Curso = { codigo: '', nombre: '', cantidad_horas: 0};
 
   constructor() {}
@@ -38,4 +39,9 @@ export class HijoComponent implements OnInit {
     alert('Curso enviado al padre');
     this.eventCurso.emit(this.curso);
   }
+
+
+  prueba="Hola"
+
+
 }

@@ -12,7 +12,7 @@
     Cambiar TechCamper
   </button>
   <div class="container p-3">
-    <table class="table table-sm table-striped">
+    <table *ngIf="cursos.length>0" class="table table-sm table-striped">
       <thead>
         <th>Código</th>
         <th>Nombre</th>
